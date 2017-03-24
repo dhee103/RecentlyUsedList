@@ -18,4 +18,8 @@ public class RecentlyUsedList {
     public int size() {
         return size;
     }
+
+    public String get() {
+        return null;
+    }
 }

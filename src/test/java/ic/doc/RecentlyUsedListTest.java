@@ -21,4 +21,12 @@ public class RecentlyUsedListTest {
         recentlyUsedList.add("hello");
         assertThat(recentlyUsedList.size(), is(1));
     }
+
+    // should be able to retrieve things from list
+    @Test
+    public void canRetrieveFromList() {
+        RecentlyUsedList recentlyUsedList = new RecentlyUsedList();
+        recentlyUsedList.add("hello");
+        assertThat(recentlyUsedList.get(), is("hello"));
+    }
 }
