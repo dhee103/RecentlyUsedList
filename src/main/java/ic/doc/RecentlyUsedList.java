@@ -1,7 +1,7 @@
 package ic.doc;
 
 public class RecentlyUsedList {
-    int size;
+    private int size;
 
     public RecentlyUsedList() {
         this.size = 0;
