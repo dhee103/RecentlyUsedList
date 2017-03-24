@@ -20,7 +20,6 @@ public class RecentlyUsedList {
 
     public void add(String elem) {
         list.add(0, elem);
-
     }
 
     public String get(int i) {
