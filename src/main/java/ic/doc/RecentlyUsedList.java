@@ -8,10 +8,10 @@ public class RecentlyUsedList {
     }
 
     public boolean isEmpty() {
-        return size == 0;
+        return size() == 0;
     }
 
-    public void add(String s) {
+    public <T> void add(T elem) {
         size++;
     }
 
