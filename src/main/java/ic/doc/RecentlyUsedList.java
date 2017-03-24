@@ -12,10 +12,10 @@ public class RecentlyUsedList {
     }
 
     public void add(String s) {
-        
+        size++;
     }
 
     public int size() {
-        return 0;
+        return size;
     }
 }
