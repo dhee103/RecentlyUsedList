@@ -31,8 +31,16 @@ public class RecentlyUsedListTest {
     public void canRetrieveByIndexFromList() {
         RecentlyUsedList recentlyUsedList = new RecentlyUsedList();
         recentlyUsedList.add("a");
-        recentlyUsedList.add("b");
         assertThat(recentlyUsedList.get(0), is("a"));
-        assertThat(recentlyUsedList.get(1), is("b"));
+    }
+
+    // most recent item should be at the front of the list
+    @Test
+    public void mostRecentItemAtFrontOfList() {
+        RecentlyUsedList recentlyUsedList = new RecentlyUsedList();
+        recentlyUsedList.add("a");
+        recentlyUsedList.add("b");
+        assertThat(recentlyUsedList.get(0), is("b"));
+        assertThat(recentlyUsedList.get(1), is("a"));
     }
 }
