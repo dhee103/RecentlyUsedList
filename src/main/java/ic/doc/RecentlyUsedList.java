@@ -21,6 +21,9 @@ public class RecentlyUsedList {
     public void add(String elem) {
         if(!list.contains(elem)) {
             list.add(0, elem);
+        } else {
+            list.remove(elem);
+            list.add(0, elem);
         }
     }
 
