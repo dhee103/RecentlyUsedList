@@ -31,6 +31,6 @@ public class RecentlyUsedListTest {
     public void canRetrieveByIndexFromList() {
         RecentlyUsedList recentlyUsedList = new RecentlyUsedList();
         recentlyUsedList.add("hello");
-        assertThat(recentlyUsedList.get(), is("hello"));
+        assertThat(recentlyUsedList.get(0), is("hello"));
     }
 }
