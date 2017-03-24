@@ -45,7 +45,6 @@ public class RecentlyUsedListTest {
     }
 
     // items are unique
-    // should be moved rather than added if duplicate
     @Test
     public void allItemsAreUnique() {
         RecentlyUsedList recentlyUsedList = new RecentlyUsedList();
@@ -53,5 +52,16 @@ public class RecentlyUsedListTest {
         assertThat(recentlyUsedList.size(), is(1));
         recentlyUsedList.add("a");
         assertThat(recentlyUsedList.size(), is(1));
+    }
+
+    // duplicate items should be moved rather than added
+    @Test
+    public void duplicateItemsMoved() {
+        RecentlyUsedList recentlyUsedList = new RecentlyUsedList();
+        recentlyUsedList.add("a");
+        recentlyUsedList.add("b");
+        recentlyUsedList.add("a");
+        assertThat(recentlyUsedList.size(), is(2));
+        assertThat(recentlyUsedList.get(0), is("a"));
     }
 }
