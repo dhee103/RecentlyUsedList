@@ -10,4 +10,12 @@ public class RecentlyUsedList {
     public boolean isEmpty() {
         return size == 0;
     }
+
+    public void add(String s) {
+        
+    }
+
+    public int size() {
+        return 0;
+    }
 }
