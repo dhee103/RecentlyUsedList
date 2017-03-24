@@ -22,7 +22,7 @@ public class RecentlyUsedList {
         list.add(elem);
     }
 
-    public String get(int index) {
-        return list.get(index);
+    public String get(int i) {
+        return list.get(i);
     }
 }
