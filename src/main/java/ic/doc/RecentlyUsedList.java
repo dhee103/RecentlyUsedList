@@ -19,12 +19,11 @@ public class RecentlyUsedList {
     }
 
     public void add(String elem) {
-        if(!list.contains(elem)) {
-            list.add(0, elem);
-        } else {
+        if(list.contains(elem)) {
             list.remove(elem);
-            list.add(0, elem);
         }
+
+        list.add(0, elem);
     }
 
     public String get(int i) {
